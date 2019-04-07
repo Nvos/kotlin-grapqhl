@@ -30,6 +30,8 @@ graphql:
     subscriptions:
       websocket:
         path: /subscriptions
+    actuator-metrics: true
+    exception-handlers-enabled: true
 
 management:
   endpoints:

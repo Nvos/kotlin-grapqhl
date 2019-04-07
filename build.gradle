@@ -1,6 +1,7 @@
 buildscript {
     ext {
         exposedVersion = '0.12.1'
+        graphqlJavaKickstartVersion = '5.7.3'
     }
 }
 
@@ -34,14 +35,14 @@ dependencies {
 	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
 
     // Graphql
-    implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:5.7.0'
-    implementation 'com.graphql-java-kickstart:graphql-java-tools:5.4.1'
+    implementation "com.graphql-java-kickstart:graphql-spring-boot-starter:${graphqlJavaKickstartVersion}"
+    implementation 'com.graphql-java-kickstart:graphql-java-tools:5.5.1'
     implementation "io.reactivex.rxjava2:rxjava:2.1.5"
 
     // Tools
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
-	runtime 'com.graphql-java-kickstart:altair-spring-boot-starter:5.7.0'
-	runtime 'com.graphql-java-kickstart:voyager-spring-boot-starter:5.7.0'  
+	runtime "com.graphql-java-kickstart:altair-spring-boot-starter:${graphqlJavaKickstartVersion}"
+	runtime "com.graphql-java-kickstart:voyager-spring-boot-starter:${graphqlJavaKickstartVersion}"
 
     // Database
     implementation "org.jetbrains.exposed:exposed:$exposedVersion"
