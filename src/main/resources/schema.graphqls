@@ -1,0 +1,28 @@
+type Query {
+    users: [User!]!
+}
+
+type User {
+    id: ID!
+    name: String!
+    notes: [Note!]!
+}
+
+type Note {
+    id: ID!
+    title: String!
+    text: String!
+    owner: User!
+}
+
+type Subscription {
+    addUser: User!
+}
+
+type Mutation {
+    createUser(input: CreateUser): User
+}
+
+input CreateUser {
+    name: String!
+}
