@@ -19,7 +19,6 @@ class GraphApplication: CommandLineRunner {
 
 }
 
-
 fun main(args: Array<String>) {
     runApplication<GraphApplication>(*args)
 }
