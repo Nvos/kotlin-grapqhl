@@ -1,0 +1,24 @@
+{
+  "__class__": "LinkedHashMap",
+  "data": {
+    "__class__": "LinkedHashMap"
+  },
+  "errors": [
+    {
+      "__class__": "LinkedHashMap",
+      "message": "Validation error",
+      "extensions": {
+        "__class__": "LinkedHashMap",
+        "validation": [
+          {
+            "__class__": "LinkedHashMap",
+            "field": "createUser.input.name",
+            "error": "{org.hibernate.validator.constraints.Length.message}"
+          }
+        ]
+      },
+      "errorType": "ValidationError",
+      "locations": []
+    }
+  ]
+}

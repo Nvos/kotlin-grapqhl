@@ -14,3 +14,5 @@ Append to **prometheus.yml**
 ```
 ### Jaeger (tracing)
 ### Grafana (metrics visualization)
+## Testing graphql
+Syntax for get in GraphqlResponse is from  https://github.com/json-path/JsonPath

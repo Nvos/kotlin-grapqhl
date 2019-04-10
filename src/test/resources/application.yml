@@ -15,3 +15,6 @@ spring:
       username: sa
       password:
       maximum-pool-size: 10
+logging:
+  level:
+    root: info
